@@ -16,8 +16,7 @@ public class GetController {
     // localhost:9090/api/getParameter?id=apple&pass=1234
     @GetMapping("/getParameter")
     public String getPara(@RequestParam String id, @RequestParam String pass){
-        System.out.println("id : " + id);
-        System.out.println("pass : " + pass);
+        System.out.println("id : " + id + ", pass : " + pass);
         return "getPara() 호출";
     }
 
